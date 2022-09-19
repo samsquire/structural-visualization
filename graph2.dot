@@ -1,0 +1,18 @@
+digraph G {
+    logicalThread1 -> sendThread1;
+    logicalThread1 -> receiveThread1;
+    logicalThread1 -> creationThread1; 
+    logicalThread1 -> creationThread2; 
+    logicalThread1 -> creationThread3; 
+
+    logicalThread2 -> sendThread2;
+    logicalThread2 -> receiveThread2;
+    logicalThread2 -> creationThread1; 
+    logicalThread2 -> creationThread2; 
+    logicalThread2 -> creationThread3; 
+    subgraph cluster_1 {
+        creationThread1;
+        creationThread2;
+        creationThread3;
+    }
+}
