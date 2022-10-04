@@ -20,4 +20,5 @@ An idea for a simple visualization of complicated structures
 
 ![threadstructure](https://raw.githubusercontent.com/samsquire/structural-visualization/main/graph.png)
 
+![betterthreadstructure](https://raw.githubusercontent.com/samsquire/structural-visualization/main/graph2.png)
 
