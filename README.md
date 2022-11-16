@@ -6,7 +6,7 @@ These rules are as follows:
 
 * we switch between horizontal and vertical rendering for efficient use of space
 * children are listed from left to right or top to bottom
-* If we want to enumerate children
+* If we want to enumerate children, we do that separately, below the main diagram
 
 See this diagram, the grid at the top represents the tree. Notice the colour codings.
 
