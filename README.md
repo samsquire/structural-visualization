@@ -15,7 +15,41 @@ See this diagram, the grid at the top represents the tree. Notice the colour cod
 
 An idea for a simple visualization of complicated structures
 
+# btree find
+
+This diagram represents the following code:
+
 ![btree](https://raw.githubusercontent.com/samsquire/structural-visualization/main/btree.png)
+
+```
+ def find(self, key):
+        leaf = self
+        next_children = self.children
+        last_child = self
+        child = None
+        parents = [self]
+        found = False
+        while found == False:
+            next_children_changed = False
+            for child in reversed(next_children):
+                if key >= child.key:
+                    # print("Inspecting {} <= {} ".format(child.key, key))
+                    next_children = child.children
+                    
+                    last_child = leaf
+                    parents.append(child)
+                    leaf = child
+                    next_children_changed = True
+                    break
+                    
+                    
+                        
+                        
+            if not next_children_changed:
+                found = True
+
+        return leaf, last_child, 
+```
 
 ![complicated](https://raw.githubusercontent.com/samsquire/structural-visualization/main/complicated.png)
 
