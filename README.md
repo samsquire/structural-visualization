@@ -21,6 +21,8 @@ This diagram represents the following code:
 
 ![btree](https://raw.githubusercontent.com/samsquire/structural-visualization/main/btree.png)
 
+Circle represents a loop, a triangle represents an if statement.
+
 ```
  def find(self, key):
         leaf = self
